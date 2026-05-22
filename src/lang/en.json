@@ -2,7 +2,8 @@
   "quick-status-select": {
     "TokenHud": {
       "quick-input": {
-        "placeholder": "Filter"
+        "label": "Search:",
+        "placeholder": "Status"
       }
     }
   }

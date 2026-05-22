@@ -8,9 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
-    # Remove the 'v' from the tag for versioning
+    # Write release asset URLs using the actual published tag.
     - id: get_version
       run: |
         echo "FOUNDRY_MANIFEST=https://github.com/${{github.repository}}/releases/latest/download/module.json" >> $GITHUB_ENV
@@ -33,7 +33,7 @@ jobs:
         allowUpdates: true # set this to false if you want to prevent updating existing releases
         name: ${{ github.event.release.name }}
         draft: false
-        prerelease: true
+        prerelease: false
         token: ${{ secrets.GITHUB_TOKEN }}
         artifacts: './src/module.json, ./src/module.zip'
         tag: ${{ github.event.release.tag_name }}

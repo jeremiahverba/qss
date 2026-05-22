@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"name": "foundry-quick-status-select-module",
-	"version": "3.1.8",
+	"version": "2.0.3",
 	"description": "A Foundry VTT module that helps quickly select effects for a token or tokens by replacing the built-in status effect selector with an auto-complete-esque search box and filtered list.",
 	"scripts": {
         "generate:symlinks": "node scripts/symlink.mjs",
@@ -9,8 +9,8 @@
         "run:foundry": "npx --config ./fvttrc.yml",
 		"version": "node scripts/version.mjs"
 	},
-	"author": "",
-	"license": "",
+	"author": "Jeremiah Verba and contributors",
+	"license": "MIT",
 	"devDependencies": {
 		"@foundryvtt/foundryvtt-cli": "^1.1.0"
 	}

@@ -1,5 +1,40 @@
-.qss-quick-input {
-  position: absolute;
-  top: -2.5rem;
-  left: 0rem;
+#token-hud .status-effects.qss-status-effects {
+  align-content: start;
+}
+
+#token-hud .status-effects .qss-quick-filter {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 28px;
+  padding: 3px;
+  background: var(--control-bg-color);
+  border-bottom: 1px solid var(--control-border-color);
+}
+
+#token-hud .status-effects .qss-quick-label {
+  flex: 0 0 auto;
+  color: var(--control-icon-color);
+  font-size: var(--font-size-12);
+  font-weight: 600;
+  line-height: 1;
+}
+
+#token-hud .status-effects .qss-quick-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 22px;
+  padding: 1px 5px;
+  background: var(--input-background-color, var(--color-cool-5-90));
+  border: 1px solid var(--control-border-color);
+  border-radius: 3px;
+  color: var(--control-icon-color);
+  font-size: var(--font-size-12);
+  line-height: 20px;
+}
+
+#token-hud .status-effects .qss-quick-input::placeholder {
+  color: var(--control-icon-color);
+  opacity: 0.7;
 }

@@ -10,10 +10,10 @@
       "name": "Emmi"
     }
   ],
-  "version": "2.0.0",
+  "version": "2.0.3",
   "compatibility": {
     "minimum": "13",
-    "verified": "13"
+    "verified": "14.362"
   },
   "esmodules": [
     "scripts/qss.mjs"
@@ -23,7 +23,7 @@
   ],
   "languages": [{ "lang": "en", "name": "English", "path": "lang/en.json" }],
   "license": "LICENSE",
-  "url": "https://github.com/tw-blob/qss",
-  "manifest": "https://github.com/tw-blob/qss/releases/latest/download/module.json",
-  "download": "https://github.com/tw-blob/qss/releases/download/2.0.0/module.zip"
+  "url": "https://github.com/jeremiahverba/qss",
+  "manifest": "https://github.com/jeremiahverba/qss/releases/latest/download/module.json",
+  "download": "https://github.com/jeremiahverba/qss/releases/latest/download/module.zip"
 }
